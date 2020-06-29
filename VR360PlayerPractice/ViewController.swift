@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     let motionManager = CMMotionManager()
     let cameraNode = SCNNode()
     
-    
     @IBOutlet weak var sceneView: SCNView!
     
     func createSphereNode(material: AnyObject?) -> SCNNode {

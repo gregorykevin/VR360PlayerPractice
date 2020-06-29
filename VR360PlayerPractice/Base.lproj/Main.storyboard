@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EOG-rI-hTv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bvq-z3-smQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,37 +8,33 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="MVB-7p-993">
+        <scene sceneID="6Wu-EM-jx9">
             <objects>
-                <viewController id="EOG-rI-hTv" customClass="ViewController" customModule="VR360PlayerPractice" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="thN-uJ-zn6"/>
-                        <viewControllerLayoutGuide type="bottom" id="ugA-75-B6B"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LtN-jI-eWh">
+                <viewController id="bvq-z3-smQ" customClass="ViewController" customModule="VR360PlayerPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hHi-sK-etN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hY1-Eg-7xP">
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khx-2b-ERW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </sceneKitView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="hY1-Eg-7xP" firstAttribute="height" secondItem="LtN-jI-eWh" secondAttribute="height" id="QHz-7o-Bzr"/>
-                            <constraint firstItem="hY1-Eg-7xP" firstAttribute="width" secondItem="LtN-jI-eWh" secondAttribute="width" id="SpY-Na-SjT"/>
-                            <constraint firstItem="hY1-Eg-7xP" firstAttribute="centerY" secondItem="LtN-jI-eWh" secondAttribute="centerY" id="ZxS-cU-YBh"/>
-                            <constraint firstItem="hY1-Eg-7xP" firstAttribute="centerX" secondItem="LtN-jI-eWh" secondAttribute="centerX" id="qQo-7s-EOD"/>
+                            <constraint firstAttribute="bottom" secondItem="khx-2b-ERW" secondAttribute="bottom" id="2BM-SX-s1J"/>
+                            <constraint firstItem="khx-2b-ERW" firstAttribute="trailing" secondItem="5SK-gN-Zb5" secondAttribute="trailing" id="4LQ-6Q-pjn"/>
+                            <constraint firstItem="khx-2b-ERW" firstAttribute="leading" secondItem="5SK-gN-Zb5" secondAttribute="leading" id="Xsm-3Q-cCC"/>
+                            <constraint firstItem="khx-2b-ERW" firstAttribute="top" secondItem="hHi-sK-etN" secondAttribute="top" id="wj5-IG-iSB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3ao-yd-blz"/>
+                        <viewLayoutGuide key="safeArea" id="5SK-gN-Zb5"/>
                     </view>
                     <connections>
-                        <outlet property="sceneView" destination="hY1-Eg-7xP" id="wUa-EP-gJu"/>
+                        <outlet property="sceneView" destination="khx-2b-ERW" id="2wd-b1-Ig4"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1aK-yu-OSu" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moR-mn-V0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="218"/>
+            <point key="canvasLocation" x="171" y="146"/>
         </scene>
     </scenes>
 </document>
